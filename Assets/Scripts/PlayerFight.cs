@@ -9,6 +9,7 @@ public class PlayerFight : MonoBehaviour {
 	public bool fight;
 
 	public void AddTarget(GameObject target){
+		if(targetList.Contains(target)){return;}
 		targetList.Add(target);
 		fight = true;
 	}	
